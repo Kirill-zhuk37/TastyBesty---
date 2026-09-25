@@ -1,0 +1,98 @@
+section > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 35px;
+    cursor: pointer;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    background-color: white;
+    border: 2px solid transparent;
+}
+
+.dish:hover {
+    border: 2px solid tomato;
+}
+
+.dish:hover button {
+    background-color: tomato;
+    color: white;
+}
+
+.dish img {
+    width: 100%;
+    height: 200px;         
+    object-fit: cover;       
+    border-radius: 35px;
+}
+
+.dish .price {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.dish .name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.dish .weight {
+    font-size: 16px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.dish button {
+    margin-top: auto;
+    background-color: #f1eee9;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* ≤800px */
+@media (max-width: 800px) {
+    section > div {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+}
+
+/* ≤600px */
+@media (max-width: 600px) {
+    section > div {
+        grid-template-columns: 1fr;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        font-size: 24px;
+    }
+    
+    section > h2 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #f9f9f9;
+}
+header {
+    background-color: white;
+    padding: 20px 40px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.header-top {
+    display: flex;                          
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.header-bottom {
+    display: flex;                         
+    align-items: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #333333;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #555;
+}
+
+nav a:hover {
+    color: #ff6b35;
+}
+
+nav a#active {
+    color: tomato;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;                                
+}
+
+section {
+    margin-bottom: 50px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0 20px 0;
+}
+
+ul {
+    padding-left: 30px;
+}
+
+ul li {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: 700;
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: #222;
+}
+
+td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: #333;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #ffaa80;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 2 лаба */
+
+@media (max-width: 800px) {
+    img {
+        width: 500px;
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        font-size: 24px;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    table {
+        font-size: 12px;
+    }
+}
