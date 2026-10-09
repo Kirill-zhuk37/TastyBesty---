@@ -110,7 +110,94 @@
         </section>
 
     </main>
-
+<!--Лаб3-->
+    <section class="order-section">
+    <h2>Сделать заказ</h2>
+    <form action="https://httpbin.org/post" method="POST">
+        
+        <div class="form-columns">
+            
+            <!-- ЛЕВАЯ КОЛОНКА: Заказ -->
+            <div class="form-column">
+                <h3>Ваш заказ</h3>
+                
+                <label for="soup">Суп</label>
+                <select id="soup" name="soup" required>
+                    <option value="">-- Выберите суп --</option>
+                    <option value="gaspacho">Гаспачо</option>
+                    <option value="gribsoup">Грибной суп-пюре</option>
+                    <option value="norvsoup">Норвежский суп</option>
+                </select>
+                
+                <label for="main">Главное блюдо</label>
+                <select id="main" name="main" required>
+                    <option value="">-- Выберите главное блюдо --</option>
+                    <option value="potato">Жареная картошка с грибами</option>
+                    <option value="lazanya">Лазанья</option>
+                    <option value="kotletki">Котлеты из курицы с картофельным пюре</option>
+                </select>
+                
+                <label for="drink">Напиток</label>
+                <select id="drink" name="drink" required>
+                    <option value="">-- Выберите напиток --</option>
+                    <option value="apsok">Апельсиновый сок</option>
+                    <option value="yabsok">Яблочный сок</option>
+                    <option value="morsok">Морковный сок</option>
+                </select>
+                
+                <label for="comment">Комментарии к заказу</label>
+                <textarea id="comment" name="comment" rows="6"></textarea>
+            </div>
+            
+            <!-- ПРАВАЯ КОЛОНКА: Данные клиента -->
+            <div class="form-column">
+                <h3>Ваши данные</h3>
+                
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <div class="checkbox-row">
+                    <input type="checkbox" id="subscribe" name="subscribe" checked>
+                    <label for="subscribe">Получать информацию о скидках и акциях</label>
+                </div>
+                
+                <label for="phone">Номер телефона</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="address">Адрес доставки</label>
+                <input type="text" id="address" name="address" required>
+                <p class="hint">Доставка осуществляется только по Москве</p>
+                
+                <p class="radio-title">Время доставки:</p>
+                
+                <div class="radio-row">
+                    <input type="radio" id="asap" name="delivery_time" value="asap" required>
+                    <label for="asap">Как можно скорее</label>
+                </div>
+                
+                <div class="radio-row">
+                    <input type="radio" id="exact" name="delivery_time" value="exact" required>
+                    <label for="exact">К указанному времени</label>
+                </div>
+                
+                <label for="time">Укажите время доставки</label>
+                <input type="time" id="time" name="time" min="07:00" max="23:00" step="300">
+                <p class="hint">Доступное время доставки с 7:00 до 23:00</p>
+                
+                <div class="buttons-row">
+                    <button type="reset">Сбросить</button>
+                    <button type="submit">Отправить</button>
+                </div>
+            </div>
+            
+        </div>
+        
+    </form>
+</section>
+<!--Лаб3-->
   <footer id = "footer">
         <p>Контакты: +7 (676) 767-67-67</p>
         <p>Email: <a href="mailto:info@tastybesty.ru">info@tastybesty.ru</a></p>
