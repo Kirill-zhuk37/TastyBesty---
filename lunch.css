@@ -226,3 +226,41 @@ section > div {
         gap: 30px;
     }
 }
+
+/* Скрытый блок */
+.hidden {
+    display: none;
+}
+
+/* Блок "Ваш заказ" */
+#order-list {
+    margin-bottom: 20px;
+}
+
+.order-item {
+    margin-bottom: 15px;
+}
+
+.order-category {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 3px;
+}
+
+.order-name {
+    font-size: 16px;
+    color: #333;
+}
+
+.order-empty-text {
+    font-size: 16px;
+    color: #aaa;
+    font-style: italic;
+}
+
+#order-total {
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: 700;
+}
